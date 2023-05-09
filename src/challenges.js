@@ -4,7 +4,7 @@ let compareTrue = (bool, bool2) => bool === true && bool2 === true ? true : fals
 // Desafio 2 - Crie a função splitSentence
 let splitSentence = String => String.split(' ');
 // Desafio 3 - Crie a função concatName
-
+let concatName = array => `${array[array.length -1]}, ${array[0]}`;
 // Desafio 4 - Crie a função footballPoints
 
 // Desafio 5 - Crie a função highestCount
