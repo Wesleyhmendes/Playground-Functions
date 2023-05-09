@@ -1,7 +1,8 @@
 // Desafio 1 - Crie a função compareTrue
+let compareTrue = (bool, bool2) => bool === true && bool2 === true ? true : false;
 
 // Desafio 2 - Crie a função splitSentence
-
+let splitSentence = String => String.split(' ');
 // Desafio 3 - Crie a função concatName
 
 // Desafio 4 - Crie a função footballPoints
