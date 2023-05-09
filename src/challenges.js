@@ -1,6 +1,5 @@
 // Desafio 1 - Crie a função compareTrue
 let compareTrue = (bool, bool2) => bool === true && bool2 === true ? true : false;
-
 // Desafio 2 - Crie a função splitSentence
 let splitSentence = String => String.split(' ');
 // Desafio 3 - Crie a função concatName
@@ -9,8 +8,33 @@ let concatName = array => `${array[array.length -1]}, ${array[0]}`;
 let footballPoints = (wins, ties) => (wins * 3) + (ties *1);
 // Desafio 5 - Crie a função highestCount
 
-// Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
+// let array = [9, 1, 2, 3, 9, 5, 7];
+// let contador = 0;
+
+// let highestCount = (array) => {
+//   for (i = 0; i < array.length; i += 1) {
+//     for (j = 0; j < i; j += 1)
+//     if(array[i] === j[i]) {
+//       let  =+ array[i];
+//     } 
+//   }
+// }
+
+
+// Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
+let calcTriangleArea = (base, height) => (base * height)/2;
+let calcRectangleArea = (base, height) => base * height;
+
+let calcAllAreas = (base, height, form) => {
+  if (form === "triângulo") {
+    return `O valor da área do triângulo é de: ${calcTriangleArea(base, height)}`;
+  } else if (form === "retângulo") {
+    return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`;
+  } else {
+    return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
+  }
+}
 // Desafio 7 - Crie a função catAndMouse
 
 // Desafio 8 - Crie a função fizzBuzz
