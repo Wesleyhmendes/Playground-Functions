@@ -157,65 +157,24 @@ let decode = fraseCodificada => {
   return fraseDecodificada;
 }
 // Desafio 10 - Crie a função techList
+let techList = (array, string) => {
+  let arrayDeObjetos = [];
+  let organizado = array.sort();
 
-let techList = (tech1, nome1) => {
-  let tecnologias = [{
-    tech: '',
-    nome: nome1
-}];
-
-  for (let i = 0; i < tech1.length; i += 1) {
-    if (i < tech1.length - 1) {
-      tecnologias.tech += `${tech1[i]}, `;
-    } else {
-      tecnologias.tech += `${tech1[i]}`;
+  for(i = 0; i < organizado.length; i += 1) {
+    let obj = {
+      tech: organizado[i],
+      name: string
     }
+
+    arrayDeObjetos.push(obj);
+
   }
-  return tecnologias;
+  return arrayDeObjetos
+
 }
 
-
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'lucas'));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 // Não modifique essas linhas
 module.exports = {
   calcTriangleArea: typeof calcTriangleArea === 'function' ? calcTriangleArea : (() => { }),

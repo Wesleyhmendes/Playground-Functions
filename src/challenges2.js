@@ -71,45 +71,6 @@ let triangleCheck = (lineA, lineB, lineC) => {
         return false;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Desafio 13 - Crie a função hydrate
 
 /* eslint no-undef: 0 */
