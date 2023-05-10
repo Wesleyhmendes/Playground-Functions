@@ -60,53 +60,6 @@ let generatePhoneNumber = (numeros) => {
   }
 }
 
-
-console.log(generatePhoneNumber([0, 21, 3, 4, 14, 2, 7, 8, 19, 9, 4]));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Desafio 12 -  Crie a função triangleCheck
 
 // Desafio 13 - Crie a função hydrate
