@@ -7,21 +7,40 @@ let concatName = array => `${array[array.length - 1]}, ${array[0]}`;
 // Desafio 4 - Crie a função footballPoints
 let footballPoints = (wins, ties) => (wins * 3) + (ties * 1);
 // Desafio 5 - Crie a função highestCount
+let highestCount = (array) => {
+  let maiorNum = 0;
+  let maiorNumNeg = 0;
 
+  let contador = 0;
+  let contadorNeg = 0;
 
-// let array = [9, 1, 2, 3, 9, 5, 7];
-// let contador = 0;
+  for (i = 0; i < array.length; i += 1) {
+    if (array[i] > maiorNum) {
+      maiorNum = array[i];
+      contador = 1;
+    } else if (array[i] == maiorNum) {
+      contador += 1;
 
-// let highestCount = (array) => {
-//   for (i = 0; i < array.length; i += 1) {
-//     for (j = 0; j < i; j += 1)
-//     if(array[i] === j[i]) {
-//       let  =+ array[i];
-//     } 
-//   }
-// }
+    } else if (array[i] < 0) {
+      if (maiorNumNeg == 0) {
+        maiorNumNeg = array[i]
+        contadorNeg = 1;
 
+      } else if (array[i] >= maiorNum) {
+            maiorNumNeg = array[i];
+            contadorNeg += 1;
+      } else {
+        //nada acontece
+      }
+    }
+  }
+  if(contador > contadorNeg) {
+    return contador;
+  } else {
+    return contadorNeg;
+  }
 
+}
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 let calcTriangleArea = (base, height) => (base * height) / 2;
 let calcRectangleArea = (base, height) => base * height;
@@ -116,8 +135,6 @@ let encode = (frase) => {
   return frase2;
 }
 
-console.log(encode('go Trybe! '));
-
 let decode = fraseCodificada => {
   let fraseDecodificada = '';
 
@@ -139,37 +156,65 @@ let decode = fraseCodificada => {
   }
   return fraseDecodificada;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Desafio 10 - Crie a função techList
+
+let techList = (tech1, nome1) => {
+  let tecnologias = {
+    tech: '',
+    nome: nome1
+  };
+
+  for (let i = 0; i < tech1.length; i += 1) {
+    if (i < tech1.length - 1) {
+      tecnologias.tech += `${tech1[i]}, `;
+    } else {
+      tecnologias.tech += `${tech1[i]}`;
+    }
+  }
+  return tecnologias;
+}
+
+
+// console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'lucas'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Não modifique essas linhas
 module.exports = {
