@@ -106,8 +106,6 @@ let fizzBuzz = (array) => {
   return resultado
 }
 // Desafio 9 - Crie a função encode e a função decode
-
-
 let encode = (frase) => {
   let frase2 = '';
   for (let letra of frase) {
@@ -173,8 +171,6 @@ let techList = (array, string) => {
   return arrayDeObjetos
 
 }
-
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 // Não modifique essas linhas
 module.exports = {
   calcTriangleArea: typeof calcTriangleArea === 'function' ? calcTriangleArea : (() => { }),

@@ -53,13 +53,10 @@ let generatePhoneNumber = (numeros) => {
       }
 
 
-
-
   } else {
       return 'Array com tamanho incorreto.';
   }
 }
-
 // Desafio 12 -  Crie a função triangleCheck
 
 let triangleCheck = (lineA, lineB, lineC) => {
@@ -72,6 +69,54 @@ let triangleCheck = (lineA, lineB, lineC) => {
     }
 }
 // Desafio 13 - Crie a função hydrate
+let hydrate = string => {
+    let quantidade = string.match(/\d+/g).map(Number);
+    let soma = 0;
+
+    for (i = 0; i < quantidade.length; i += 1) {
+        soma += quantidade[i];
+    }
+
+    if(soma > 1) {
+        return `${soma} copos de água`;
+    } else {
+        return `${soma} copo de água`;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* eslint no-undef: 0 */
 
