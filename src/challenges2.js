@@ -83,41 +83,6 @@ let hydrate = string => {
         return `${soma} copo de água`;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* eslint no-undef: 0 */
 
 // Não modifique essas linhas
