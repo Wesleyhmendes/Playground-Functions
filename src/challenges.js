@@ -159,10 +159,10 @@ let decode = fraseCodificada => {
 // Desafio 10 - Crie a função techList
 
 let techList = (tech1, nome1) => {
-  let tecnologias = {
+  let tecnologias = [{
     tech: '',
     nome: nome1
-  };
+}];
 
   for (let i = 0; i < tech1.length; i += 1) {
     if (i < tech1.length - 1) {
@@ -175,7 +175,7 @@ let techList = (tech1, nome1) => {
 }
 
 
-// console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'lucas'));
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'lucas'));
 
 
 
